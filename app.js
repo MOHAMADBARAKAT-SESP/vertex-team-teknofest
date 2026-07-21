@@ -83,7 +83,7 @@ const teamMembers = [
     email: " esammadein0@gmail.com",
     github: "https://github.com/esamtm",
     fallbackImage: "essam.png",
-    portfolioLink: "esam cv.pdf",
+    portfolioLink: "Esam cv.pdf",
     translations: {
       en: {
         role: "Mechatronics Engineer",
