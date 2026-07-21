@@ -45,7 +45,7 @@ const teamMembers = [
     id: "member3",
     name: "Hamza Emin Yüksel",
     email: "hamzaemin.yuksel@st.uskudar.edu.tr",
-    github: "",
+    github: "https://github.com/hamza-embedded-dev",
     linkedin: "https://www.linkedin.com/in/hamza-emin-b9a713290",
     fallbackImage: "hamza.png",
     portfolioLink: "hamza cv.jpeg",
