@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #0d1126;
+  --color-primary-light: #d5d2de;
+  --color-accent-blue: #3b82f6;
+  --color-accent-cyan: #06b6d4;
+}
+
+@layer base {
+  body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-light);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1126;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e264d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Elastic 3D scale/bounce hover effect */
+.logo-3d-hover {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.logo-3d-hover:hover {
+  transform: scale(1.15) rotateX(12deg) rotateY(12deg) translateZ(10px);
+  filter: drop-shadow(0 10px 20px rgba(59, 130, 246, 0.4));
+}
+
+/* Premium Tech Glassmorphism Card */
+.glass-card {
+  background: rgba(13, 17, 38, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(213, 210, 222, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 12px 40px 0 rgba(59, 130, 246, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Image zoom hover effect */
+.img-zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+.img-zoom {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.img-zoom-container:hover .img-zoom {
+  transform: scale(1.08);
+}
+
+/* Reveal-on-scroll states */
+.reveal-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.reveal-element.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Wave animation for audio button */
+.wave-bar {
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  background-color: var(--color-primary-light);
+  margin: 0 1px;
+  transform-origin: bottom;
+}
+.wave-active .wave-bar {
+  animation: bounce-wave 1s ease-in-out infinite alternate;
+}
+.wave-active .wave-bar:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.wave-active .wave-bar:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.wave-active .wave-bar:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+@keyframes bounce-wave {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1.5); }
+}
+
+/* Accordion expand helper */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+  opacity: 0;
+}
+.accordion-content.expanded {
+  opacity: 1;
+}
+
+/* Glow effects */
+.text-glow {
+  text-shadow: 0 0 12px rgba(213, 210, 222, 0.3);
+}
+.text-glow-blue {
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+}
