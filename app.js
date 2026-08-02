@@ -10,7 +10,7 @@ const teamMembers = [
     github: "https://github.com/MOHAMADBARAKAT-SESP",
     linkedin: "https://www.linkedin.com/in/mohamad-barakat-999a27386",
     fallbackImage: "barakat2.png",
-    portfolioLink: "MOHAMAD BARAKAT(2).pdf",
+    portfolioLink: "MOHAMAD BARAKAT.docx",
     translations: {
       en: {
         role: "Team Lead & AI and Software Engineer",
