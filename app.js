@@ -1,4 +1,4 @@
-// VERTEX TEAM Portfolio Application Code
+// ANKEBUT - VERTEX Portfolio Application Code
 
 // Team Members Dataset
 // Team Members Dataset
@@ -9,10 +9,10 @@ const teamMembers = [
     email: "mohamad.barakat@st.uskudar.edu.tr",
     github: "https://github.com/MOHAMADBARAKAT-SESP",
     linkedin: "https://www.linkedin.com/in/mohamad-barakat-999a27386",
-    fallbackImage: "barakat2.png",
-    portfolioLink: "MOHAMAD BARAKAT(2).pdf",
+    fallbackImage: "mhd2.png",
+    portfolioLink: "MOHAMAD BARAKAT (1).pdf",
     translations: {
-      en: {
+      en: { 
         role: "Team Lead & AI and Software Engineer",
         bio: "Lead and AI specialist focusing on autonomous decision-making and system architecture."
       },
@@ -28,7 +28,7 @@ const teamMembers = [
     email: "osman.demir@st.uskudar.edu.tr",
     github: "https://github.com/osmandmr099",
     linkedin: "https://www.linkedin.com/in/osmandmr099",
-    fallbackImage: "osman demir.png",
+    fallbackImage: "osman1.png",
     portfolioLink: "osman cv.pdf",
     translations: {
       en: {
@@ -45,9 +45,9 @@ const teamMembers = [
     id: "member3",
     name: "Hamza Emin Yüksel",
     email: "hamzaemin.yuksel@st.uskudar.edu.tr",
-    github: "",
+    github: "https://github.com/hamza-embedded-dev",
     linkedin: "https://www.linkedin.com/in/hamza-emin-b9a713290",
-    fallbackImage: "hamza.png",
+    fallbackImage: "hamza2.png",
     portfolioLink: "hamza cv.jpeg",
     translations: {
       en: {
@@ -64,7 +64,7 @@ const teamMembers = [
     id: "member4",
     name: "Ali Osman Tas",
     linkedin: "https://www.linkedin.com/in/aliosmantaş",
-    fallbackImage: "ali.png",
+    fallbackImage: "ali2.png",
     portfolioLink: "ali cv.pdf",
     translations: {
       en: {
@@ -82,8 +82,8 @@ const teamMembers = [
     name: "Essam Madian",
     email: " esammadein0@gmail.com",
     github: "https://github.com/esamtm",
-    fallbackImage: "essam.png",
-    portfolioLink: "esam cv.pdf",
+    fallbackImage: "essam2.png",
+    portfolioLink: "Esam cv.pdf",
     translations: {
       en: {
         role: "Mechatronics Engineer",
@@ -102,7 +102,7 @@ const teamMembers = [
 const translations = {
   en: {
     navGithub: "GitHub Org",
-    heroTitle: "NEXT-GEN UGV TECHNOLOGIES",
+    heroTitle: "NEXT-GEN ADVANCED AUTONOMOUS SYSTEMS",
     heroSubtitle: "Engineering the future of defense robotics for TEKNOFEST.",
     heroCta: "GET TO KNOW US",
     teamTitle: "MEET THE TEAM",
@@ -112,11 +112,11 @@ const translations = {
     showLess: "Show Less",
     audioOn: "Audio: On",
     audioOff: "Audio: Off",
-    footerText: "Designed & Engineered By VERTEX TEAM"
+    footerText: "Designed & Engineered By ANKEBUT - VERTEX"
   },
   tr: {
     navGithub: "GitHub Org",
-    heroTitle: "YENİ NESİL İKA TEKNOLOJİLERİ",
+    heroTitle: "YENİ NESİL GELİŞMİŞ OTONOM SİSTEMLER",
     heroSubtitle: "TEKNOFEST için savunma robotiğinin geleceğini tasarlıyoruz.",
     heroCta: "BİZİ TANIYIN",
     teamTitle: "TAKIMIMIZLA TANIŞIN",
@@ -126,7 +126,7 @@ const translations = {
     showLess: "Daha Az Göster",
     audioOn: "Ses: Açık",
     audioOff: "Ses: Kapalı",
-    footerText: "VERTEX TEAM Tarafından Tasarlandı ve Geliştirildi"
+    footerText: "ANKEBUT - VERTEX Tarafından Tasarlandı ve Geliştirildi"
   }
 };
 
@@ -162,8 +162,8 @@ function createCardElement(member, lang, index) {
   const tTrans = translations[lang];
   
   card.innerHTML = `
-    <div class="img-zoom-container h-72 w-full relative bg-slate-950">
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0d1126] to-transparent opacity-60 z-10"></div>
+    <div class="img-zoom-container h-72 w-full relative bg-neutral-950">
+      <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 z-10"></div>
       <img src="team_member_${index + 1}.png" 
            onerror="this.onerror=null; this.src='${member.fallbackImage}';" 
            alt="${member.name}" 
@@ -171,10 +171,10 @@ function createCardElement(member, lang, index) {
     </div>
     <div class="p-6">
       <h3 class="text-xl font-bold text-[#d5d2de] tracking-wide mb-1">${member.name}</h3>
-      <p class="role-text text-xs font-semibold text-blue-400 uppercase tracking-widest mb-4 h-8 flex items-center">${mTrans.role}</p>
+      <p class="role-text text-xs font-semibold text-orange-500 uppercase tracking-widest mb-4 h-8 flex items-center">${mTrans.role}</p>
       
       <div class="flex flex-col gap-3">
-        <a href="${member.portfolioLink}" target="_blank" class="portfolio-btn w-full text-center py-2.5 px-4 bg-transparent border border-blue-500/30 text-blue-400 font-semibold rounded-lg hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 text-sm">
+        <a href="${member.portfolioLink}" target="_blank" class="portfolio-btn w-full text-center py-2.5 px-4 bg-transparent border border-orange-500/30 text-orange-500 font-semibold rounded-lg hover:bg-orange-500/10 hover:border-orange-500 transition-all duration-300 text-sm">
           ${tTrans.viewPortfolio}
         </a>
         
@@ -188,7 +188,7 @@ function createCardElement(member, lang, index) {
         <div class="accordion-content">
           <p class="bio-text text-sm text-slate-400 mb-5 leading-relaxed pt-2 border-t border-slate-800/80">${mTrans.bio}</p>
           <div class="flex justify-center gap-6 pb-2">
-            <a href="mailto:${member.email}" class="text-slate-400 hover:text-blue-400 transition-colors duration-300" title="Email">
+            <a href="mailto:${member.email}" class="text-slate-400 hover:text-orange-500 transition-colors duration-300" title="Email">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
@@ -198,7 +198,7 @@ function createCardElement(member, lang, index) {
                 <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.646.64.699 1.026 1.592 1.026 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path>
               </svg>
             </a>
-            <a href="${member.linkedin}" target="_blank" class="text-slate-400 hover:text-blue-500 transition-colors duration-300" title="LinkedIn">
+            <a href="${member.linkedin}" target="_blank" class="text-slate-400 hover:text-orange-500 transition-colors duration-300" title="LinkedIn">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path>
               </svg>
@@ -257,15 +257,15 @@ function switchLanguage(lang) {
   if (!enBtn || !trBtn) return;
   
   if (lang === "en") {
-    enBtn.classList.add("text-blue-400", "font-bold", "text-glow-blue");
+    enBtn.classList.add("text-orange-500", "font-bold", "text-glow-orange");
     enBtn.classList.remove("text-slate-400");
     trBtn.classList.add("text-slate-400");
-    trBtn.classList.remove("text-blue-400", "font-bold", "text-glow-blue");
+    trBtn.classList.remove("text-orange-500", "font-bold", "text-glow-orange");
   } else {
-    trBtn.classList.add("text-blue-400", "font-bold", "text-glow-blue");
+    trBtn.classList.add("text-orange-500", "font-bold", "text-glow-orange");
     trBtn.classList.remove("text-slate-400");
     enBtn.classList.add("text-slate-400");
-    enBtn.classList.remove("text-blue-400", "font-bold", "text-glow-blue");
+    enBtn.classList.remove("text-orange-500", "font-bold", "text-glow-orange");
   }
   
   // Update standard data-i18n items
@@ -358,10 +358,10 @@ function setupHeaderScroll() {
   
   window.addEventListener("scroll", () => {
     if (window.scrollY > 40) {
-      header.classList.add("bg-[#0d1126]/90", "backdrop-blur-lg", "border-b", "border-slate-800/50", "py-3");
+      header.classList.add("bg-black/90", "backdrop-blur-lg", "border-b", "border-slate-800/50", "py-3");
       header.classList.remove("bg-transparent", "border-transparent", "py-5");
     } else {
-      header.classList.remove("bg-[#0d1126]/90", "backdrop-blur-lg", "border-b", "border-slate-800/50", "py-3");
+      header.classList.remove("bg-black/90", "backdrop-blur-lg", "border-b", "border-slate-800/50", "py-3");
       header.classList.add("bg-transparent", "border-transparent", "py-5");
     }
   });
@@ -384,16 +384,16 @@ function setupAudioToggle() {
       audioStatusText.textContent = translations[currentLang].audioOn;
       
       // Update styling to reflect active sound
-      audioBtn.classList.add("bg-blue-600/30", "border-blue-500/50");
-      audioBtn.classList.remove("bg-[#0d1126]/60", "border-[#d5d2de]/10");
+      audioBtn.classList.add("bg-orange-600/30", "border-orange-500/50");
+      audioBtn.classList.remove("bg-black/60", "border-[#d5d2de]/10");
     } else {
       video.muted = true;
       waveContainer.classList.remove("wave-active");
       audioStatusText.textContent = translations[currentLang].audioOff;
       
       // Update styling to reflect muted sound
-      audioBtn.classList.add("bg-[#0d1126]/60", "border-[#d5d2de]/10");
-      audioBtn.classList.remove("bg-blue-600/30", "border-blue-500/50");
+      audioBtn.classList.add("bg-black/60", "border-[#d5d2de]/10");
+      audioBtn.classList.remove("bg-orange-600/30", "border-orange-500/50");
     }
   });
 }
