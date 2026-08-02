@@ -1,0 +1,35 @@
+Update branding to ANKEBUT - VERTEX, change colors to orange/black, and fix background
+
+# Conflicts:
+#	app.js
+
+git rebase --continue# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# interactive rebase in progress; onto 6a949a2
+# Last command done (1 command done):
+#    pick 0eb3b04 # Update branding to ANKEBUT - VERTEX, change colors to orange/black, and fix background
+# No commands remaining.
+# You are currently rebasing branch 'main' on '6a949a2'.
+#
+# Changes to be committed:
+#	renamed:    MOHAMAD BARAKAT(2).pdf -> MOHAMAD BARAKAT (1).pdf
+#	deleted:    ali.png
+#	new file:   ali2.png
+#	new file:   ankebut.png
+#	new file:   ankebut.svg
+#	modified:   app.js
+#	deleted:    barakat2.png
+#	deleted:    cooking-smoke-alpha.webm.mp4
+#	deleted:    essam.png
+#	new file:   essam2.png
+#	deleted:    hamza.png
+#	new file:   hamza2.png
+#	modified:   index.css
+#	modified:   index.html
+#	new file:   mhd2.png
+#	modified:   military car.mp4
+#	deleted:    osman demir.png
+#	new file:   osman1.png
+#	deleted:    rdoner-wordmark-no-flame.png
+#
