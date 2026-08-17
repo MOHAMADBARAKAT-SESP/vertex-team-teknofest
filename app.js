@@ -24,7 +24,7 @@ const teamMembers = [
     email: "mohamad.barakat@st.uskudar.edu.tr",
     github: "https://github.com/MOHAMADBARAKAT-SESP",
     linkedin: "https://www.linkedin.com/in/mohamad-barakat-999a27386",
-    fallbackImage: "mhd2.png",
+    fallbackImage: "mhd2.jpg",
     portfolioLink: "MOHAMAD BARAKAT (1).pdf",
     translations: {
       en: { 
