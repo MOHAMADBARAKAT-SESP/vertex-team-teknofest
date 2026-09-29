@@ -109,6 +109,25 @@ const teamMembers = [
         bio: "Mekanik entegrasyon, test ve b akım süreçlerine destek verir." 
       }
     }
+  },
+  {
+    id: "member6",
+    name: "Ahmet Zeren",
+    email: "ahmetzeren2007@gmail.com",
+    github: "https://github.com/niko3x",
+    linkedin: "https://www.linkedin.com/in/ahmet-zeren-113651333",
+    fallbackImage: "ahmet.png",
+    portfolioLink: "ahmet cv.pdf",
+    translations: {
+      en: {
+        role: "Electrical & Electronics Engineering Student",
+        bio: "Contributes to UAV design, electronics, PCB development, and prototyping, supported by hands-on TEKNOFEST and Deneyap experience."
+      },
+      tr: {
+        role: "Elektrik-Elektronik Mühendisliği Öğrencisi",
+        bio: "TEKNOFEST ve Deneyap deneyiminden yararlanarak İHA tasarımı, elektronik, PCB geliştirme ve prototipleme çalışmalarına katkı sağlar."
+      }
+    }
   }
 ];
 
@@ -147,7 +166,7 @@ const translations = {
   }
 };
 
-// Render Team Cards into the Grid (3 on top, 3 on bottom)
+// Render Team Cards into the Grid (3 on top, remaining members below)
 function renderTeam(lang) {
   const topContainer = document.getElementById("team-top-row");
   const bottomContainer = document.getElementById("team-bottom-row");
@@ -161,7 +180,7 @@ function renderTeam(lang) {
     topContainer.appendChild(createCardElement(member, lang, index));
   });
   
-  teamMembers.slice(3, 6).forEach((member, index) => {
+  teamMembers.slice(3).forEach((member, index) => {
     bottomContainer.appendChild(createCardElement(member, lang, index + 3));
   });
   
