@@ -93,24 +93,6 @@ const teamMembers = [
     }
   },
   {
-    id: "member5",
-    name: "Essam Madian",
-    email: " esammadein0@gmail.com",
-    github: "https://github.com/esamtm",
-    fallbackImage: "essam2.png",
-    portfolioLink: "Esam cv.pdf",
-    translations: {
-      en: {
-        role: "Mechatronics Engineer",
-        bio: "Assists in mechanical integration, testing, and maintenance workflows."
-      },
-      tr: {
-        role: "Mekatronik Mühendisi",
-        bio: "Mekanik entegrasyon, test ve b akım süreçlerine destek verir." 
-      }
-    }
-  },
-  {
     id: "member6",
     name: "Ahmet Zeren",
     email: "ahmetzeren2007@gmail.com",
